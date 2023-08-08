@@ -1,0 +1,31 @@
+.container {
+  border: 1px solid #000;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  display: inline-block;
+
+  font-family: sans-serif;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+
+    align-items: center;
+    gap: 1rem;
+
+    list-style: none;
+
+    li {
+      a {
+        color: #000;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
