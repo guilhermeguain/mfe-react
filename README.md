@@ -9,8 +9,8 @@ Host:
 Remote:
 
 - Init React (npx create-react-app project-name)
-- Install dev-dependencies (npm install -D @babel/plugin-proposal-private-property-in-object, @babel/preset-react, webpack-dev-server, babel-loader, dotenv-webpack, external-remotes-plugin, file-loader, css-loader, sass-loader, style-loader, svg-loader, sass, webpack-cli, html-webpack-plugin)
+- Install dev-dependencies (npm install -D @babel/plugin-proposal-private-property-in-object, @babel/preset-react, webpack-dev-server, dotenv-webpack, external-remotes-plugin, babel-loader, css-loader, style-loader, webpack-cli, html-webpack-plugin)
 - Create .babelrc at root directory ({"presets": [["@babel/preset-react", { "runtime": "automatic" }]]})
 - Create and configure webpack.config.js at root directory
-- Add dev script in package.json ("dev": "webpack-dev-server")
+- Add scripts in package.json ({"start": "webpack --mode production && serve --cors dist -p 3005", "dev": "webpack-dev-server", "build": "webpack"})
 - Create components and expose them in webpack.config.js (Remember to use export default)

@@ -26,6 +26,7 @@ const nextConfig = {
             name: "host",
             remotes: {
               child: `child@http://localhost:3005/remoteEntry.js`,
+              sibling: `sibling@http://localhost:3008/remoteEntry.js`,
             },
             filename: "static/chunks/remoteEntry.js",
             shared: sharedDependencies(),

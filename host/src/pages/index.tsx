@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
 import { DelayedChildNavbar } from "@/shared/child";
+import { DelayedSiblingButton } from "@/shared/sibling";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <DelayedChildNavbar />
+        <DelayedSiblingButton />
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
